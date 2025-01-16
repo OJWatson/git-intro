@@ -1,6 +1,14 @@
-# Introduction to Git
+---
+title: "Introduction to Git"
+subtitle: "plus GitHub, R & RStudio"
+author: "OJ Watson"
+date: "2025-01-21"
 
-## plus GitHub, R & Rstudio
+format:
+  revealjs:
+    incremental: true   
+---
+
 
 ---
 
@@ -18,74 +26,74 @@
 
 ## Version control: metadata + history
 
-* **who**: name of person making changes
-* **when**: date and time change
-* **what**: contents of files changed
-* **why**: motivation for the change <!-- .element: class="fragment highlight-red" -->
-
-...plus tools for working with the metadata
+- **who**: name of person making changes
+- **when**: date and time change
+- **what**: contents of files changed
+- **why**: motivation for the change
 
 ---
 
 ## Like a backup?
 
-* why not just dropbox?
-* what about time machine?
+- Why not just Dropbox?
+- What about Time Machine?
 
 ---
 
-# Learning git
+## Learning git
+
+. . .
 
 ![](pics/xkcd_1597.png)
 
 ---
 
-# Basic git terms
+## Basic git terms
 
-* **repository**: (or "repo") git's database.  Might be local or on GitHub
-* **working copy**: all the files you actually work with
-* **commit**:
+- **repository**: (or "repo") git's database. Might be local or on GitHub
+- **working copy**: all the files you actually work with
+- **commit**:
   - as a noun: a snapshot of all the files in the repository
   - as a verb: create a snapshot
-* **hash**: fingerprint of a file/repository
+- **hash**: fingerprint of a file/repository
 
 ---
 
-# Git history
+## Git history
 
-![](pics/graph_linear.png) <!-- .element: class="fragment" -->
-![](pics/graph_nonlinear.png) <!-- .element: class="fragment" -->
+![](pics/graph_linear.png)
+![](pics/graph_nonlinear.png)
 
 ---
 
 ## Interacting with git
 
-* From the command line - eventually you will have to do this
-* From a gui
-  - Rstudio has a basic one built in
-  - SourceTree and GitKraken are nice
-  - GitHub has one
-* Via GitHub
+
+- From the command line - eventually, you will have to do this
+- From a GUI
+  - RStudio has one built-in
+  - Most IDEs do now (e.g. VSCode or Positron)
+- Via GitHub
 
 ---
 
 ## The shortest bash tutorial
 
-* `pwd`: what directory am I in?
-* `cd`: change directory
-* `ls`: list files
-* `cp`: copy files (use `-r` for directories)
-* `rm`: delete files (be careful)
+- `pwd`: what directory am I in?
+- `cd`: change directory
+- `ls`: list files
+- `cp`: copy files (use `-r` for directories)
+- `rm`: delete files (be careful)
 
 ---
 
-# Basic git commands
+## Basic git commands
 
-* `git init`: initialise a repository
-* `git add`: stage files
-* `git commit`: add staged files to the repository by making a commit
-* `git log`: see overview of what changed (does way too many different things)
-* `git diff`: see details of what changed
+- `git init`: initialise a repository
+- `git add`: stage files
+- `git commit`: add staged files to the repository by making a commit
+- `git log`: see an overview of what changed
+- `git diff`: see details of what changed
 
 ---
 
@@ -142,12 +150,12 @@ grep '^git ' .bash_history  | awk '{print $2}' | sort | uniq -c | sort -rn
 
 ## The good, the bad and the ugly
 
-- tiny change, big comment: https://github.com/wrathematics/getPass/commit/93afa4f
+- tiny change, big comment: [https://github.com/wrathematics/getPass/commit/93afa4f](https://github.com/wrathematics/getPass/commit/93afa4f)
 
-- calling amnesty on forgetting to use version control: https://github.com/richfitz/diversitree/commit/edde317
+- calling amnesty on forgetting to use version control: [https://github.com/richfitz/diversitree/commit/edde317](https://github.com/richfitz/diversitree/commit/edde317)
 
 - changes to prose may not break down so nicely
-https://github.com/richfitz/wood/commit/0a40e30
+[https://github.com/richfitz/wood/commit/0a40e30](https://github.com/richfitz/wood/commit/0a40e30)
 
 ---
 
@@ -201,26 +209,26 @@ inst/web
 
 ---
 
-# Branches
+## Branches
 
 ![](pics/endofunctors.png)
 
 ---
 
-# Graphs
+## Graphs
 
 ![](pics/graph_linear.png) <!-- .element: class="fragment" -->
 ![](pics/graph_nonlinear.png) <!-- .element: class="fragment" -->
 
 ---
 
-# Graphs
+## Graphs
 
 ![](pics/commits-and-parents.png)
 
 ---
 
-# Graphs
+## Graphs
 
 ![](pics/branch-and-history.png)
 
@@ -239,7 +247,7 @@ inst/web
 
 ---
 
-# GitHub things
+## GitHub things
 
 * issues
 * pull requests
@@ -249,7 +257,7 @@ inst/web
 
 ---
 
-# Rstudio and GitHub
+## Rstudio and GitHub
 
 * not all commands are supported but the basic ones are
 * get to the shell for the rest
